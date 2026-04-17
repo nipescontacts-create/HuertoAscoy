@@ -1,0 +1,222 @@
+:root {
+  --green: #2f9e44;
+  --green-dark: #1f5d2e;
+  --bg: #ffffff;
+  --muted: #edf5ef;
+  --danger: #cc3b3b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--green-dark);
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #dde7df;
+  position: sticky;
+  top: 0;
+  background: #fff;
+}
+
+h1, h2, h3 {
+  margin: 0 0 0.5rem;
+}
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e3eee5;
+  border-radius: 14px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.btn {
+  background: var(--green);
+  border: none;
+  color: #fff;
+  padding: 0.6rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(0.96);
+}
+
+.btn-secondary {
+  background: #5c7c63;
+}
+
+.btn-small {
+  padding: 0.4rem 0.7rem;
+  font-size: 0.88rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input, select, textarea {
+  border: 1px solid #c9dacc;
+  border-radius: 8px;
+  padding: 0.55rem;
+  font: inherit;
+}
+
+.auth-card {
+  max-width: 460px;
+  margin: 2rem auto;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+
+.tab {
+  border: 1px solid #d8e8dc;
+  border-radius: 8px;
+  padding: 0.55rem;
+  background: #fff;
+  color: var(--green-dark);
+  cursor: pointer;
+}
+
+.tab.active {
+  background: var(--muted);
+  border-color: #b8d6bf;
+}
+
+.form:not(.active) {
+  display: none;
+}
+
+.error {
+  color: var(--danger);
+  min-height: 1.2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.stats {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.stats div {
+  background: var(--muted);
+  border-radius: 10px;
+  padding: 0.7rem;
+}
+
+.stats strong {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.weather-main {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.4rem;
+}
+
+.advice {
+  background: #f4faf5;
+  padding: 0.6rem;
+  border-radius: 8px;
+}
+
+.plant-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.plant-item {
+  border: 1px solid #d7e8da;
+  border-radius: 12px;
+  padding: 0.8rem;
+}
+
+.plant-item header {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.6rem;
+  align-items: baseline;
+}
+
+.actions {
+  margin: 0.6rem 0;
+}
+
+details {
+  margin-top: 0.6rem;
+  background: #fbfdfb;
+  border-radius: 8px;
+  padding: 0.4rem 0.6rem;
+}
+
+.watering-history, .journal-list, .photo-timeline {
+  margin: 0.6rem 0;
+  padding-left: 1rem;
+}
+
+.photo-timeline img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 0.35rem;
+}
+
+@media (max-width: 700px) {
+  main {
+    padding: 0.7rem;
+  }
+
+  .topbar h1 {
+    font-size: 1.2rem;
+  }
+}
