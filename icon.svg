@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="HuertoAscoy">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f9e44" />
+      <stop offset="100%" stop-color="#1f5d2e" />
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="56" fill="#ffffff" />
+  <rect x="14" y="14" width="228" height="228" rx="42" fill="none" stroke="#d5e8d8" stroke-width="6" />
+  <path d="M74 170c0-38 25-70 62-77-6 11-8 23-8 35 0 20 7 39 20 53-6 3-13 5-20 5-30 0-54-24-54-54Z" fill="url(#g1)" />
+  <path d="M130 84c39 8 58 40 52 79-38-8-58-40-52-79Z" fill="#2f9e44" opacity="0.9" />
+  <circle cx="128" cy="128" r="6" fill="#ffffff" />
+</svg>
